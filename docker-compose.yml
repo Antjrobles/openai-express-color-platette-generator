@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: color-palette-generator
+    ports:
+      - '5029:5029'
+    volumes:
+      - .:/app
+      - /app/node_modules
