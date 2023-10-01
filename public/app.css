@@ -4,11 +4,12 @@ body {
   background-color: black;
   font-family: 'Playfair Display', serif;
   width: 100%;
-  overflow: hidden;
+  height: 100vh;
 }
 
 .container {
   display: flex;
+  height: 100%;
 }
 
 .color {
@@ -41,8 +42,19 @@ body {
 }
 
 .title {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+span {
+  color: rgb(53, 17, 216);
+  font-family: 'Lato', serif;
+  font-weight: 100;
+  transition: opacity 0.5s ease;
+  font-weight: 900;
 }
 #form {
   position: absolute;

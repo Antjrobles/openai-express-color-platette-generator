@@ -1,5 +1,8 @@
 const form = document.querySelector("#form");
 const messageElement = document.createElement("p");
+const title = document.querySelector(".title");
+
+console.log(title);
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -8,6 +11,12 @@ form.addEventListener("submit", function (e) {
 
 
 function getColorsArray() {
+
+  if (title) {
+    title.remove();
+  }
+
+
   const query = form.elements.query.value;
   const requestOptions = {
     method: 'POST',
